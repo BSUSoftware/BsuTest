@@ -17,13 +17,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarWars.Api", "StarWars.Ap
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JediAcademyBack", "JediAcademyBack", "{70B965E8-8D66-483C-B784-455D730D51E0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JediAcademy.Back.Api", "JediAcademy.Back.Api\JediAcademy.Back.Api.csproj", "{5AFA9F49-CD65-49D4-8B0A-70D16A5FCA3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JediAcademy.Back.Api", "JediAcademyBack\JediAcademy.Back.Api\JediAcademy.Back.Api.csproj", "{5AFA9F49-CD65-49D4-8B0A-70D16A5FCA3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JediAcademy.Back.Domain", "JediAcademy.Back.Domain\JediAcademy.Back.Domain.csproj", "{0A01AF1C-EEF6-4C27-9BE8-E81BB7CADF76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JediAcademy.Back.Domain", "JediAcademyBack\JediAcademy.Back.Domain\JediAcademy.Back.Domain.csproj", "{0A01AF1C-EEF6-4C27-9BE8-E81BB7CADF76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jedi.Academy.Persistence", "Jedi.Academy.Persistence\Jedi.Academy.Persistence.csproj", "{6003E855-56E2-49DF-B49B-F2BC515A80CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jedi.Academy.Persistence", "JediAcademyBack\Jedi.Academy.Persistence\Jedi.Academy.Persistence.csproj", "{6003E855-56E2-49DF-B49B-F2BC515A80CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JediAcademy.Back.Application", "JediAcademy.Back.Application\JediAcademy.Back.Application.csproj", "{40D017CE-33DD-446F-8101-225F17D1F90F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JediAcademy.Back.Application", "JediAcademyBack\JediAcademy.Back.Application\JediAcademy.Back.Application.csproj", "{40D017CE-33DD-446F-8101-225F17D1F90F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JediAcademy.Domain", "JediAcademyFront\JediAcademy.Domain\JediAcademy.Domain.csproj", "{2B759FED-48EE-41F7-8E12-F36D9389766F}"
 EndProject
