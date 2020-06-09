@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using JediAcademy.Domain.Entities;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -11,6 +12,7 @@ namespace JediAcademy.Presentation.ViewModels
             Species = new List<SelectListItem>{new SelectListItem("Select...",null)};
         }
         public List<SelectListItem> Species { get; set; }
+        [Required]
         public string SelectedSpecies { get; set; }
     }
 }

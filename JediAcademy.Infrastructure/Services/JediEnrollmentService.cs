@@ -42,5 +42,28 @@ namespace JediAcademy.Infrastructure.Services
                 return (false, null);
             }
         }
+
+        public async Task<(bool IsSuccess, IEnumerable<JediStudent> Result)> GetExistingStudents()
+        {
+            try
+            {
+                var client = _httpClientFactory.CreateClient("Individuals");
+                var response = await client.GetAsync("");
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsByteArrayAsync();
+                    var options = new JsonSerializerOptions() { PropertyNameCaseInsensitive = true };
+                    var result = JsonSerializer.Deserialize<IEnumerable<JediStudent>>(content, options);
+                    return (true, result);
+                }
+
+                return (false, null);
+            }
+            catch (Exception e)
+            {
+                _logger?.LogError(e.ToString());
+                return (false, null);
+            }
+        }
     }
 }

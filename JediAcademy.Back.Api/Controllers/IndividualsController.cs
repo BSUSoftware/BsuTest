@@ -19,14 +19,14 @@ namespace JediAcademy.Back.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var jedi = await _mediator.Send(new GetStudents.Query());
-            if (jedi.IsSuccess)
+            var (isSuccess, jediStudents, message) = await _mediator.Send(new GetStudents.Query());
+            if (isSuccess)
             {
-                return Ok(jedi.Result);
+                return Ok(jediStudents);
             }
-            return jedi.Result != null ?
-                NotFound(jedi.Message) :
-                StatusCode(500, jedi.Message);
+            return jediStudents != null ?
+                NotFound(message) :
+                StatusCode(500, message);
         }
     }
 

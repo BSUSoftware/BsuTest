@@ -7,5 +7,6 @@ namespace JediAcademy.Domain.Services
     public interface IJediEnrollmentService
     {
         Task<(bool IsSuccess, IEnumerable<Species> Result)> GetAvailableSpecies();
+        Task<(bool IsSuccess, IEnumerable<JediStudent> Result)> GetExistingStudents();
     }
 }

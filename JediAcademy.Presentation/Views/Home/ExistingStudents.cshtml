@@ -1,0 +1,29 @@
+﻿@model JediAcademy.Presentation.ViewModels.ExistingStudentsViewModel
+
+@{
+    ViewData["Title"] = "Existing Students";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Height</th>
+            <th scope="col">Mass</th>
+            <th scope="col">Species</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var jediStudent in @Model.JediStudents)
+        {
+            <tr>
+                <td>@jediStudent.Name</td>
+                <td>@jediStudent.Height</td>
+                <td>@jediStudent.Mass</td>
+                <td>@jediStudent.Species</td>
+            </tr>
+        }
+    </tbody>
+</table>
