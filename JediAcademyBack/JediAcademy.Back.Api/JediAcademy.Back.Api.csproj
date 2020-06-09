@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Jedi.Academy.Persistence\Jedi.Academy.Persistence.csproj" />
+    <ProjectReference Include="..\Jedi.Academy.Back.Persistence\Jedi.Academy.Back.Persistence.csproj" />
     <ProjectReference Include="..\JediAcademy.Back.Application\JediAcademy.Back.Application.csproj" />
   </ItemGroup>
 

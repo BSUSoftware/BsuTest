@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JediAcademy.Back.Api", "Jed
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JediAcademy.Back.Domain", "JediAcademyBack\JediAcademy.Back.Domain\JediAcademy.Back.Domain.csproj", "{0A01AF1C-EEF6-4C27-9BE8-E81BB7CADF76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jedi.Academy.Persistence", "JediAcademyBack\Jedi.Academy.Persistence\Jedi.Academy.Persistence.csproj", "{6003E855-56E2-49DF-B49B-F2BC515A80CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jedi.Academy.Back.Persistence", "JediAcademyBack\Jedi.Academy.Back.Persistence\Jedi.Academy.Back.Persistence.csproj", "{6003E855-56E2-49DF-B49B-F2BC515A80CD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JediAcademy.Back.Application", "JediAcademyBack\JediAcademy.Back.Application\JediAcademy.Back.Application.csproj", "{40D017CE-33DD-446F-8101-225F17D1F90F}"
 EndProject
