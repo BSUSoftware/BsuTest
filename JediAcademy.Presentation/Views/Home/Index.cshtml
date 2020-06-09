@@ -1,0 +1,32 @@
+﻿@model JediAcademy.Presentation.ViewModels.JediEnrollmentViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Enroll new Jedi</h1>
+<div class="card card-body bg-light">
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="newJediName">Name</label>
+                <input type="text" class="form-control" id="newJediName" placeholder="Name">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputHeight">Height</label>
+                <input type="number" class="form-control" id="inputHeight">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputMass">Mass</label>
+                <input type="number" class="form-control" id="inputMass">
+            </div>
+            <div class="form-group col-md-4">
+                @Html.LabelFor(model=>model.SelectedSpecies,"Species")
+                @Html.DropDownListFor(model => model.SelectedSpecies, Model.Species, new { @class = "form-control" })
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enroll</button>
+    </form>
+</div>
+

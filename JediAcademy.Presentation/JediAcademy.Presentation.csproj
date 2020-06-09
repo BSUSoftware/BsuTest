@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="8.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JediAcademy.Application\JediAcademy.Application.csproj" />
+    <ProjectReference Include="..\JediAcademy.Domain\JediAcademy.Domain.csproj" />
+    <ProjectReference Include="..\JediAcademy.Infrastructure\JediAcademy.Infrastructure.csproj" />
+  </ItemGroup>
+
+
+
+</Project>
