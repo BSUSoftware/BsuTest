@@ -5,7 +5,23 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\JediAcademy.Back.Domain\JediAcademy.Back.Domain.csproj" />
+    <Content Remove="SeedData\Individuals.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="SeedData\Individuals.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="8.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0-preview.4.20220.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.0-preview.4.20220.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Jedi.Academy.Persistence\Jedi.Academy.Persistence.csproj" />
+    <ProjectReference Include="..\JediAcademy.Back.Application\JediAcademy.Back.Application.csproj" />
   </ItemGroup>
 
 

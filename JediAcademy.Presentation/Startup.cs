@@ -1,4 +1,3 @@
-using JediAcademy.Domain.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -7,6 +6,7 @@ using Microsoft.Extensions.Hosting;
 using System;
 using MediatR;
 using JediAcademy.Application.Queries;
+using JediAcademy.Domain.Services;
 using JediAcademy.Infrastructure.Services;
 
 namespace JediAcademy.Presentation
@@ -26,6 +26,10 @@ namespace JediAcademy.Presentation
             services.AddHttpClient("Species", config =>
             {
                 config.BaseAddress = new Uri(Configuration["SwApi:Species"]);
+            });            
+            services.AddHttpClient("Individuals", config =>
+            {
+                config.BaseAddress = new Uri(Configuration["SwApi:Individuals"]);
             });
             services.AddScoped<IJediEnrollmentService,JediEnrollmentService>();
             services.AddMediatR(typeof(RetrieveSpecies));

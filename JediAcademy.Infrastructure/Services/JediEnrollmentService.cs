@@ -26,7 +26,6 @@ namespace JediAcademy.Infrastructure.Services
             {
                 var client = _httpClientFactory.CreateClient("Species");
                 var response = await client.GetAsync("");
-                var test = await response.Content.ReadAsStringAsync();
                 if (response.IsSuccessStatusCode)
                 {
                     var content = await response.Content.ReadAsByteArrayAsync();

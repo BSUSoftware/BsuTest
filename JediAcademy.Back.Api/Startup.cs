@@ -1,15 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Jedi.Academy.Persistence.Db;
+using Jedi.Academy.Persistence.Services;
+using JediAcademy.Back.Application.Queries;
+using JediAcademy.Back.Domain.Services;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
 namespace JediAcademy.Back.Api
 {
@@ -25,6 +24,9 @@ namespace JediAcademy.Back.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMediatR(typeof(GetStudents));
+            services.AddDbContext<JediStudentsDbContext>(options => { options.UseInMemoryDatabase("JediStudents"); });
+            services.AddScoped<IJediStudentsService,JediStudentsService>();
             services.AddControllers();
         }
 
