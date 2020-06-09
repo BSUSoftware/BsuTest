@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JediAcademyFront", "JediAcademyFront", "{9DD67D1B-B360-499E-A004-DC57FAAFEF21}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JediAcademy.Presentation", "JediAcademy.Presentation\JediAcademy.Presentation.csproj", "{76E8BEC5-60F7-4242-A358-8A2F49BD458E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JediAcademy.Presentation", "JediAcademyFront\JediAcademy.Presentation\JediAcademy.Presentation.csproj", "{76E8BEC5-60F7-4242-A358-8A2F49BD458E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JediAcademy.Infrastructure", "JediAcademy.Infrastructure\JediAcademy.Infrastructure.csproj", "{40E276D1-03D2-49F5-B793-9FD0E5472088}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JediAcademy.Infrastructure", "JediAcademyFront\JediAcademy.Infrastructure\JediAcademy.Infrastructure.csproj", "{40E276D1-03D2-49F5-B793-9FD0E5472088}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JediAcademy.Application", "JediAcademy.Application\JediAcademy.Application.csproj", "{A9B05C52-7F07-471F-AD99-294780ECF17F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JediAcademy.Application", "JediAcademyFront\JediAcademy.Application\JediAcademy.Application.csproj", "{A9B05C52-7F07-471F-AD99-294780ECF17F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StarWarsApi", "StarWarsApi", "{C55BE805-FF6F-4932-9F0F-F9F3B94B2508}"
 EndProject
@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jedi.Academy.Persistence", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JediAcademy.Back.Application", "JediAcademy.Back.Application\JediAcademy.Back.Application.csproj", "{40D017CE-33DD-446F-8101-225F17D1F90F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JediAcademy.Domain", "JediAcademy.Domain\JediAcademy.Domain.csproj", "{2B759FED-48EE-41F7-8E12-F36D9389766F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JediAcademy.Domain", "JediAcademyFront\JediAcademy.Domain\JediAcademy.Domain.csproj", "{2B759FED-48EE-41F7-8E12-F36D9389766F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
