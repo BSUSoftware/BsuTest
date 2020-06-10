@@ -57,7 +57,7 @@ Write Unit Tests for the Projects within the JediAcademyFront folder.
 - Dockerize the solution so that it's runnable using a dockerCompose as startup project
 
 # Sounds good?
-Great! Good luck and may the fore be with you!
+Great! Good luck and may the force be with you!
 
 
 
