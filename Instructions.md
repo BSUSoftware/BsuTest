@@ -36,7 +36,7 @@ Ok Ok... Geez you can't wait to start the test eh?? <br/>
 Here's the challenges, we do not expect you to complete all of them but the more you can complete, the better we can get to know you (no pressure).
 
 # Challenge 1:
-The developer who wrote the view listing all external students already enrolled, has decided to display the Id referring to the species of our student. <br/>
+The developer who wrote the view for the "Currently Enrolled" page listing all external students that are already enrolled, has decided to display the Id referring to the species of our student. <br/>
 We do not think that's really user friendly, could you change that so that the species name is retrieved? <br />
 E.G. Luke Skywalker species should read Human not 0.
 
