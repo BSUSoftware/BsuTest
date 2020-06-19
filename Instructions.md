@@ -21,7 +21,7 @@ While we understand this code may be quite challenging to understand depending o
 This said, what we would like to see is an general understanding of what the code is doing and possibly your solution to some if not all the challenges. <br/>
 On the file Resources.DM you'll find links to documentation/videos that may help you, if you need more info pop us an email and remember that Google and stack overflow are your friends! :)
 
-# How Do I run the application?
+# How do I run the application?
 Clone this repository to your local machine and open it in Visual Studio/VS Code. <br/>
 Once the application has loaded, right click on the solution name and select "Set Startup Projects..." <br/>
 On the window that will pop up (this should be Common Properties => Startup Project) select "Multiple startup projects:" <br/>
