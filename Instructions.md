@@ -41,7 +41,7 @@ We do not think that's really user friendly, could you change that so that the s
 E.G. Luke Skywalker species should read Human not 0.
 
 # Challenge 2:
-The form is currently not saving any data to the Students in memory DB. <br/>
+The "Enroll new Jedi" form is currently not saving any data to the Students in memory DB. <br/>
 Could you make it so that on pressing Enroll, a student record is saved to the database?
 
 # Challenge 3:
