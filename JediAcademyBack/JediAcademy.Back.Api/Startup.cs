@@ -1,7 +1,6 @@
-using Jedi.Academy.Persistence.Db;
-using Jedi.Academy.Persistence.Services;
+using JediAcademy.Back.Application.Interfaces;
 using JediAcademy.Back.Application.Queries;
-using JediAcademy.Back.Domain.Services;
+using JediAcademy.Back.Infrastructure.Persistence;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,7 +25,7 @@ namespace JediAcademy.Back.Api
         {
             services.AddMediatR(typeof(GetStudents));
             services.AddDbContext<JediStudentsDbContext>(options => { options.UseInMemoryDatabase("JediStudents"); });
-            services.AddScoped<IJediStudentsService,JediStudentsService>();
+            services.AddScoped<IJediStudentsDbContext>(provider => provider.GetService<JediStudentsDbContext>());
             services.AddControllers();
         }
 

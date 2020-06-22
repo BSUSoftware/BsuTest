@@ -1,4 +1,4 @@
-﻿using JediAcademy.Application.Queries;
+﻿using JediAcademy.Presentation.Services;
 using JediAcademy.Presentation.ViewModels;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -11,16 +11,16 @@ namespace JediAcademy.Presentation.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IMediator _mediator;
+        private readonly IJediEnrollmentService _jediEnrollmentService;
 
-        public HomeController(IMediator mediator)
+        public HomeController(IJediEnrollmentService jediEnrollmentService)
         {
-            _mediator = mediator;
+            _jediEnrollmentService = jediEnrollmentService;
         }
 
         public async Task<ViewResult> Index()
         {
-            var (isSuccess, species) = await _mediator.Send(new RetrieveSpecies.Query());
+            var (isSuccess, species) = await _jediEnrollmentService.GetAvailableSpecies();
             var viewModel = new JediEnrollmentViewModel();
             if (isSuccess)
             {
@@ -31,7 +31,7 @@ namespace JediAcademy.Presentation.Controllers
 
         public async Task<IActionResult> ExistingStudents()
         {
-            var (isSuccess, jediStudents) = await _mediator.Send(new RetrieveExistingStudents.Query());
+            var (isSuccess, jediStudents) = await _jediEnrollmentService.GetExistingStudents();
             var viewModel = new ExistingStudentsViewModel();
             if (isSuccess)
             {

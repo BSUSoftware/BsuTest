@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using JediAcademy.Domain.Entities;
 
 namespace JediAcademy.Presentation.ViewModels
 {

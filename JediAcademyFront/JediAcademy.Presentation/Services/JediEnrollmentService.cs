@@ -1,13 +1,13 @@
-﻿using JediAcademy.Domain.Entities;
-using JediAcademy.Domain.Services;
+﻿using JediAcademy.Presentation.ViewModels;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace JediAcademy.Infrastructure.Services
+namespace JediAcademy.Presentation.Services
 {
     public class JediEnrollmentService : IJediEnrollmentService
     {
@@ -29,8 +29,8 @@ namespace JediAcademy.Infrastructure.Services
                 if (response.IsSuccessStatusCode)
                 {
                     var content = await response.Content.ReadAsByteArrayAsync();
-                    var options = new JsonSerializerOptions(){PropertyNameCaseInsensitive = true};
-                    var result = JsonSerializer.Deserialize<IEnumerable<Species>>(content,options);
+                    var options = new JsonSerializerOptions() { PropertyNameCaseInsensitive = true };
+                    var result = JsonSerializer.Deserialize<IEnumerable<Species>>(content, options);
                     return (true, result);
                 }
 

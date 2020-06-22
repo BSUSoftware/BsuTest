@@ -7,10 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JediAcademyFront", "JediAca
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JediAcademy.Presentation", "JediAcademyFront\JediAcademy.Presentation\JediAcademy.Presentation.csproj", "{76E8BEC5-60F7-4242-A358-8A2F49BD458E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JediAcademy.Infrastructure", "JediAcademyFront\JediAcademy.Infrastructure\JediAcademy.Infrastructure.csproj", "{40E276D1-03D2-49F5-B793-9FD0E5472088}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JediAcademy.Application", "JediAcademyFront\JediAcademy.Application\JediAcademy.Application.csproj", "{A9B05C52-7F07-471F-AD99-294780ECF17F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StarWarsApi", "StarWarsApi", "{C55BE805-FF6F-4932-9F0F-F9F3B94B2508}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarWars.Api", "StarWars.Api\StarWars.Api.csproj", "{42130027-76DF-4CDC-ABE6-1CA020C39F5B}"
@@ -19,13 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JediAcademyBack", "JediAcad
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JediAcademy.Back.Api", "JediAcademyBack\JediAcademy.Back.Api\JediAcademy.Back.Api.csproj", "{5AFA9F49-CD65-49D4-8B0A-70D16A5FCA3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JediAcademy.Back.Domain", "JediAcademyBack\JediAcademy.Back.Domain\JediAcademy.Back.Domain.csproj", "{0A01AF1C-EEF6-4C27-9BE8-E81BB7CADF76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JediAcademy.Back.Domain", "JediAcademyBack\JediAcademy.Back.Domain\JediAcademy.Back.Domain.csproj", "{0A01AF1C-EEF6-4C27-9BE8-E81BB7CADF76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jedi.Academy.Back.Persistence", "JediAcademyBack\Jedi.Academy.Back.Persistence\Jedi.Academy.Back.Persistence.csproj", "{6003E855-56E2-49DF-B49B-F2BC515A80CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JediAcademy.Back.Application", "JediAcademyBack\JediAcademy.Back.Application\JediAcademy.Back.Application.csproj", "{40D017CE-33DD-446F-8101-225F17D1F90F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JediAcademy.Back.Application", "JediAcademyBack\JediAcademy.Back.Application\JediAcademy.Back.Application.csproj", "{40D017CE-33DD-446F-8101-225F17D1F90F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JediAcademy.Domain", "JediAcademyFront\JediAcademy.Domain\JediAcademy.Domain.csproj", "{2B759FED-48EE-41F7-8E12-F36D9389766F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JediAcademy.Back.Infrastructure", "JediAcademyBack\JediAcademy.Back.Infrastructure\JediAcademy.Back.Infrastructure.csproj", "{69E589AF-B2B5-4490-8DC2-3FDF0202F5DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,14 +31,6 @@ Global
 		{76E8BEC5-60F7-4242-A358-8A2F49BD458E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76E8BEC5-60F7-4242-A358-8A2F49BD458E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76E8BEC5-60F7-4242-A358-8A2F49BD458E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{40E276D1-03D2-49F5-B793-9FD0E5472088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40E276D1-03D2-49F5-B793-9FD0E5472088}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40E276D1-03D2-49F5-B793-9FD0E5472088}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40E276D1-03D2-49F5-B793-9FD0E5472088}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A9B05C52-7F07-471F-AD99-294780ECF17F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A9B05C52-7F07-471F-AD99-294780ECF17F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A9B05C52-7F07-471F-AD99-294780ECF17F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A9B05C52-7F07-471F-AD99-294780ECF17F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{42130027-76DF-4CDC-ABE6-1CA020C39F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{42130027-76DF-4CDC-ABE6-1CA020C39F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42130027-76DF-4CDC-ABE6-1CA020C39F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,32 +43,25 @@ Global
 		{0A01AF1C-EEF6-4C27-9BE8-E81BB7CADF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A01AF1C-EEF6-4C27-9BE8-E81BB7CADF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A01AF1C-EEF6-4C27-9BE8-E81BB7CADF76}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6003E855-56E2-49DF-B49B-F2BC515A80CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6003E855-56E2-49DF-B49B-F2BC515A80CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6003E855-56E2-49DF-B49B-F2BC515A80CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6003E855-56E2-49DF-B49B-F2BC515A80CD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{40D017CE-33DD-446F-8101-225F17D1F90F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{40D017CE-33DD-446F-8101-225F17D1F90F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40D017CE-33DD-446F-8101-225F17D1F90F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40D017CE-33DD-446F-8101-225F17D1F90F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2B759FED-48EE-41F7-8E12-F36D9389766F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B759FED-48EE-41F7-8E12-F36D9389766F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2B759FED-48EE-41F7-8E12-F36D9389766F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2B759FED-48EE-41F7-8E12-F36D9389766F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69E589AF-B2B5-4490-8DC2-3FDF0202F5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69E589AF-B2B5-4490-8DC2-3FDF0202F5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69E589AF-B2B5-4490-8DC2-3FDF0202F5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69E589AF-B2B5-4490-8DC2-3FDF0202F5DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{76E8BEC5-60F7-4242-A358-8A2F49BD458E} = {9DD67D1B-B360-499E-A004-DC57FAAFEF21}
-		{40E276D1-03D2-49F5-B793-9FD0E5472088} = {9DD67D1B-B360-499E-A004-DC57FAAFEF21}
-		{A9B05C52-7F07-471F-AD99-294780ECF17F} = {9DD67D1B-B360-499E-A004-DC57FAAFEF21}
 		{42130027-76DF-4CDC-ABE6-1CA020C39F5B} = {C55BE805-FF6F-4932-9F0F-F9F3B94B2508}
 		{5AFA9F49-CD65-49D4-8B0A-70D16A5FCA3E} = {70B965E8-8D66-483C-B784-455D730D51E0}
 		{0A01AF1C-EEF6-4C27-9BE8-E81BB7CADF76} = {70B965E8-8D66-483C-B784-455D730D51E0}
-		{6003E855-56E2-49DF-B49B-F2BC515A80CD} = {70B965E8-8D66-483C-B784-455D730D51E0}
 		{40D017CE-33DD-446F-8101-225F17D1F90F} = {70B965E8-8D66-483C-B784-455D730D51E0}
-		{2B759FED-48EE-41F7-8E12-F36D9389766F} = {9DD67D1B-B360-499E-A004-DC57FAAFEF21}
+		{69E589AF-B2B5-4490-8DC2-3FDF0202F5DA} = {70B965E8-8D66-483C-B784-455D730D51E0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {135E7BEF-4A92-4751-BAEB-61B627D06803}

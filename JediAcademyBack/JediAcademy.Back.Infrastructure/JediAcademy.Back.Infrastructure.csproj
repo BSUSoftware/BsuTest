@@ -1,16 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="8.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.5" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\JediAcademy.Back.Domain\JediAcademy.Back.Domain.csproj" />
+    <ProjectReference Include="..\JediAcademy.Back.Application\JediAcademy.Back.Application.csproj" />
   </ItemGroup>
 
 </Project>

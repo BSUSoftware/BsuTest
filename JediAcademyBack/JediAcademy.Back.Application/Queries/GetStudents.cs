@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using JediAcademy.Back.Application.Interfaces;
 using JediAcademy.Back.Domain.Entities;
-using JediAcademy.Back.Domain.Services;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace JediAcademy.Back.Application.Queries
 {
@@ -22,16 +24,29 @@ namespace JediAcademy.Back.Application.Queries
 
         public class Handler : IRequestHandler<Query, (bool IsSuccess,IEnumerable<JediStudent> Result,string Message)>
         {
-            private readonly IJediStudentsService _jediStudentsService;
+            private readonly IJediStudentsDbContext _dbContext;
 
-            public Handler(IJediStudentsService jediStudentsService)
+            public Handler(IJediStudentsDbContext dbContext)
             {
-                _jediStudentsService = jediStudentsService;
+                _dbContext = dbContext;
             }
 
-            public Task<(bool IsSuccess, IEnumerable<JediStudent> Result, string Message)> Handle(Query request, CancellationToken cancellationToken)
+            public async Task<(bool IsSuccess, IEnumerable<JediStudent> Result, string Message)> Handle(Query request, CancellationToken cancellationToken)
             {
-                return _jediStudentsService.GetJediStudents();
+                try
+                {
+                    var students = await _dbContext.JediStudents.ToListAsync();
+                    if (students != null && students.Any())
+                    {
+                        return (true, students, null);
+                    }
+
+                    return (false, students, "No Jedi Students found");
+                }
+                catch (Exception exception)
+                {
+                    return (false, null, exception.Message);
+                }
             }
         }
 

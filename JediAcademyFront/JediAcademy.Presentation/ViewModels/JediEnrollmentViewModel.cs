@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using JediAcademy.Domain.Entities;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace JediAcademy.Presentation.ViewModels
