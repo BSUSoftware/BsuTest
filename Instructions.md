@@ -15,7 +15,7 @@ There is no rush, however it would be great if you could complete this within a 
 If you need more time let us know!
 
 # What is your expectation?
-Within the last year our development team has started working its way into microservices and the clean architecture. <br/>
+Within the last year our development team has started working its way into microservices and clean architecture. <br/>
 The application you'll find in this repository will give you a hint on the way we are aiming to structure our code from now on.
 While we understand this code may be quite challenging to understand depending on the level you are applying for, we believe a developer is before anything else a problem solver eager to learn new and exciting technologies and ways of working. <br/>
 This said, what we would like to see is an general understanding of what the code is doing and possibly your solution to some if not all the challenges. <br/>
