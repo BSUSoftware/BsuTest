@@ -18,7 +18,7 @@ If you need more time let us know!
 Within the last year our development team has started working its way into microservices and clean architecture. <br/>
 The application you'll find in this repository will give you a hint on the way we are aiming to structure our code from now on.
 While we understand this code may be quite challenging to understand depending on the level you are applying for, we believe a developer is before anything else a problem solver eager to learn new and exciting technologies and ways of working. <br/>
-This said, what we would like to see is an general understanding of what the code is doing and possibly your solution to some if not all the challenges. <br/>
+That said, what we would like to see is a general understanding of what the code is doing and possibly your solution to some if not all the challenges. <br/>
 On the file Resources.DM you'll find links to documentation/videos that may help you, if you need more info pop us an email and remember that Google and stack overflow are your friends! :)
 
 # How do I run the application?
