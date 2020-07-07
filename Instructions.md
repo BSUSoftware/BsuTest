@@ -11,7 +11,7 @@ Let's get a couple of questions out of the way before we get to the challenges y
 To complete the test you will need either Visual Studio or Visual Studio Code to be installed on your machine.
 
 # How long do I have to complete the test?
-There is no rush, however it would be great if you could complete this within a week from receiving our inivitation. <br/>
+There is no rush, however it would be great if you could complete this within a week from receiving our invitation. <br/>
 If you need more time let us know!
 
 # What is your expectation?
