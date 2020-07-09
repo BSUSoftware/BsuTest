@@ -8,6 +8,7 @@ using System;
 
 namespace JediAcademy.Presentation
 {
+    //a change
     public class Startup
     {
         public Startup(IConfiguration configuration)
