@@ -49,11 +49,9 @@ Our compliance team has just come back with more requirements, now they want the
 Could you add the option of selecting a planet of origin in the form? (brownie points if you also store the planet on db when enrolling students)<br/>
 (A Planet.Json file is already in the StarWars.Api project containing all known planets in the galaxy)
 
-# Challenge 4:
-Write Unit Tests for the Projects within the JediAcademyFront folder.
-
 # Bonus Points:
 - Any improvement you can make (with comment on how it makes the application better)
+- Write Unit Tests for the Projects (the more the merrier).
 - Dockerize the solution so that it's runnable using a dockerCompose as startup project
 
 # Sounds good?
