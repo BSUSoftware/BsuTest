@@ -8,7 +8,7 @@ You'll also find two MicroServices exposed by their APIs to retrieve general dat
 Let's get a couple of questions out of the way before we get to the challenges young Padawan! 
 
 # What do I need to complete the test?
-To complete the test you will need either Visual Studio or Visual Studio Code to be installed on your machine.
+To complete the test you will need an IDE supporting .net core. Our instructions are for Visual Studio (which we use in our day to day job) you can download the community edition [here](https://visualstudio.microsoft.com/)
 
 # How long do I have to complete the test?
 There is no rush, however it would be great if you could complete this within a week from receiving our invitation. <br/>
@@ -22,7 +22,7 @@ That said, what we would like to see is a general understanding of what the code
 On the file Resources.DM you'll find links to documentation/videos that may help you, if you need more info pop us an email and remember that Google and stack overflow are your friends! :)
 
 # How do I run the application?
-Clone this repository to your local machine and open it in Visual Studio/VS Code. <br/>
+Clone this repository to your local machine and open it in Visual Studio. <br/>
 Once the application has loaded, right click on the solution name and select "Set Startup Projects..." <br/>
 On the window that will pop up (this should be Common Properties => Startup Project) select "Multiple startup projects:" <br/>
 From the list of project Set the "Action" tab to "Start" for the following projects:
