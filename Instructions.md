@@ -1,7 +1,7 @@
 # BsuTest
 Welcome to Bath Spa's Software Development recruitment test! <br/>
 This little test has been put together to get to know you better and assess both your coding knowledge and determination, we are sure you'll do great! <br/>
-Bath Spa University has recently opened a new sister Academy to teach anyone from the galaxy how to become a Jedi. <br/>
+Bath Spa University has recently opened a new sister Academy to teach anyone from the galaxy how to become a Jedi Knight. <br/>
 The Software Development team has been tasked to create a little web application to enroll new Students and retrieve a list of existing ones. <br/>
 The solution project you'll find in this repository has the main interface consisting of a Form to enroll new students and a page listing all students already enrolled. <br/>
 You'll also find two MicroServices exposed by their APIs to retrieve general data and to manage our JediStudents Data. <br/>
@@ -15,7 +15,7 @@ There is no rush, however it would be great if you could complete this within a 
 If you need more time let us know!
 
 # What is your expectation?
-Within the last year our development team has started working its way into microservices and clean architecture. <br/>
+In the last few years our development team has started working its way into microservices and clean architecture. <br/>
 The application you'll find in this repository will give you a hint on the way we are aiming to structure our code from now on.<br/>
 While we get that this code may be quite challenging to understand, depending on the level you are applying for, we believe a developer is before anything else a problem solver eager to learn new and exciting technologies and ways of working. <br/>
 That said, what we would like to see is a general understanding of what the code is doing and possibly your solution to some if not all the challenges. <br/>
