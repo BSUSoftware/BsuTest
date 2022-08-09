@@ -15,23 +15,24 @@ namespace JediAcademy.Back.Infrastructure.Persistence
             // Seed, if necessary
             if (!dbContext.JediStudents.Any())
             {
-                var data = System.IO.File.ReadAllText("SeedData/Individuals.json");
+                var data = await System.IO.File.ReadAllTextAsync("SeedData/Individuals.json");
                 if (!string.IsNullOrEmpty(data))
                 {
                     var options = new JsonSerializerOptions() { PropertyNameCaseInsensitive = true };
                     var students = JsonSerializer.Deserialize<IEnumerable<JediStudent>>(data, options);
-                    foreach (var student in students)
-                    {
-                        dbContext.Add(new JediStudent
+                    if (students != null)
+                        foreach (var student in students)
                         {
-                            Id = Guid.NewGuid().GetHashCode(),
-                            Height = student.Height,
-                            Mass = student.Mass,
-                            Name = student.Name,
-                            Species = student.Species
-                        });
-                        await dbContext.SaveChangesAsync();
-                    }
+                            dbContext.Add(new JediStudent
+                            {
+                                Id = Guid.NewGuid().GetHashCode(),
+                                Height = student.Height,
+                                Mass = student.Mass,
+                                Name = student.Name,
+                                Species = student.Species
+                            });
+                            await dbContext.SaveChangesAsync();
+                        }
                 }
             }
         }
