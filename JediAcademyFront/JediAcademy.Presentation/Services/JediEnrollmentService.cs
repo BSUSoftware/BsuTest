@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -46,16 +47,23 @@ namespace JediAcademy.Presentation.Services
         {
             try
             {
-                var client = _httpClientFactory.CreateClient("Individuals");
-                var response = await client.GetAsync("");
-                if (response.IsSuccessStatusCode)
+                var (isSuccess1, species) = await GetAvailableSpecies();
+                if (isSuccess1)
                 {
-                    var content = await response.Content.ReadAsByteArrayAsync();
-                    var options = new JsonSerializerOptions() { PropertyNameCaseInsensitive = true };
-                    var result = JsonSerializer.Deserialize<IEnumerable<JediStudent>>(content, options);
-                    return (true, result);
+                    var client = _httpClientFactory.CreateClient("Individuals");
+                    var response = await client.GetAsync("");
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var content = await response.Content.ReadAsByteArrayAsync();
+                        var options = new JsonSerializerOptions() { PropertyNameCaseInsensitive = true };
+                        var result = JsonSerializer.Deserialize<IEnumerable<JediStudent>>(content, options);
+                        for (int i = 0; i < result.Count(); i++)
+                        {
+                            result.ElementAt(i).Species = species.FirstOrDefault(s => s.Id == result.ElementAt(i).Species).Name;
+                        }
+                        return (true, result);
+                    }
                 }
-
                 return (false, null);
             }
             catch (Exception e)
